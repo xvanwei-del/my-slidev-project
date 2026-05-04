@@ -100,6 +100,7 @@ canvasWidth: 900
 
 ---
 
+<div class="slide-content" style="transform: scale(0.94); transform-origin: top center;">
 <!-- SLIDE 3: 递推法 -->
 <div class="slide-recursive" style="position:absolute;inset:0;transform:scale(0.78) translateY(-8%);transform-origin:center center;">
   <div class="bg-fib">
@@ -184,7 +185,7 @@ canvasWidth: 900
     </div>
   </div>
 </div>
-
+</div>
 ---
 
 <!-- SLIDE 4: 倒推法 -->

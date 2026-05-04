@@ -1,6 +1,7 @@
 # 迭代算法 —— 算法设计与分析 (Slidev Presentation)
 
 这是一个基于 [Slidev](https://sli.dev/) 开发的演示文稿项目，主题为**迭代算法**。该文稿结合了学术内容与现代化的交互式 UI 设计，旨在深入浅出地讲解算法设计中的核心迭代思想。
+> 🔗 [点此在线预览演示效果](https://my-slidev-project-54ug113v6-xvanwei-dels-projects.vercel.app)
 
 ## 📖 内容概览
 

@@ -1,0 +1,53 @@
+name: Deploy Slidev to GitHub Pages
+
+on:
+  push:
+    branches: ["main", "master"] # 当推送到主分支时触发
+
+# 设置 GitHub Pages 所需的权限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 允许并发部署，但会自动取消进行中的旧部署
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        # 如果你使用的是 pnpm 或 yarn，请将这里的 npm install 替换为 pnpm i 或 yarn
+        run: npm install 
+
+      - name: Build Slidev
+        # 这里的 build 命令会执行你在 package.json 中配置好的带有 --base 的命令
+        run: npm run build 
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist # Slidev 默认打包输出的文件夹
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

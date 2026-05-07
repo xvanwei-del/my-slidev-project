@@ -101,6 +101,7 @@ canvasWidth: 900
 ---
 
 <!-- SLIDE 3: 递推法 -->
+<div class="slide-content" style="transform: scale(0.93); transform-origin: top center;">
 <div class="slide-recursive" style="position:absolute;inset:0;transform:scale(0.78) translateY(-8%);transform-origin:center center;">
   <div class="bg-fib">
     <svg viewBox="0 0 900 506" preserveAspectRatio="xMidYMid slice">
@@ -184,10 +185,14 @@ canvasWidth: 900
     </div>
   </div>
 </div>
+  
+</div>
+
 
 ---
 
 <!-- SLIDE 4: 倒推法 -->
+<div class="slide-content" style="transform: scale(0.94); transform-origin: top center;">
 <div class="slide-backward" style="position:absolute;inset:0;transform:scale(0.78) translateY(-8%);transform-origin:center center;">
   <div class="bg-binary">
     <div class="binary-col" style="left:5%">10110100101101001011010010</div>
@@ -284,6 +289,9 @@ canvasWidth: 900
       </div>
     </div>
   </div>
+</div>
+
+  
 </div>
 
 ---

@@ -62,7 +62,7 @@ canvasWidth: 900
       </g>
     </svg>
   </div>
-  <div class="overview-left">
+  <div v-click class="overview-left">
     <div class="overview-left-badge">⟳ Iterative Strategy</div>
     <div class="overview-left-title">迭代算法<br>三大策略</div>
     <div class="overview-left-divider"></div>
@@ -71,7 +71,7 @@ canvasWidth: 900
     </div>
   </div>
   <div class="overview-right">
-    <div class="ov-card">
+    <div v-click class="ov-card">
       <div class="ov-icon icon-green">→</div>
       <div>
         <div class="ov-card-title">递推法（正推）</div>
@@ -79,7 +79,7 @@ canvasWidth: 900
       </div>
       <div class="ov-card-tag">Forward</div>
     </div>
-    <div class="ov-card">
+    <div v-click class="ov-card">
       <div class="ov-icon icon-purple">←</div>
       <div>
         <div class="ov-card-title">倒推法（逆推）</div>
@@ -87,7 +87,7 @@ canvasWidth: 900
       </div>
       <div class="ov-card-tag">Backward</div>
     </div>
-    <div class="ov-card">
+    <div v-click class="ov-card">
       <div class="ov-icon icon-amber">≈</div>
       <div>
         <div class="ov-card-title">迭代逼近（解方程）</div>
@@ -115,19 +115,19 @@ canvasWidth: 900
       </g>
     </svg>
   </div>
-  <div class="sec-header">
+  <div v-click class="sec-header">
     <div class="sec-num">4.1</div>
     <div class="sec-title">递推法 — 由已知推未知</div>
     <div class="sec-tag">Forward Iteration</div>
   </div>
   <div class="rec-grid" style="flex:1">
     <div class="rec-col">
-      <div class="problem-box">
+      <div v-click class="problem-box">
         <div class="prob-title">经典问题：兔子繁殖</div>
         每对兔子第三个月起每月生一对，<strong>第12个月共有多少对？</strong><br>
         初始：第1、2月各1对；第n月 = 第(n-1)月 + 第(n-2)月
       </div>
-      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:8px">
+      <div v-click style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:8px">
         <div class="formula-label">斐波那契数列</div>
         <div style="display:flex;align-items:center;gap:4px;flex-wrap:wrap">
           <div class="fib-cell"><div class="fib-num fib-base">1</div><div class="fib-month">m=1</div></div>
@@ -148,7 +148,7 @@ canvasWidth: 900
           f(n) = f(n−1) + f(n−2) &nbsp;|&nbsp; f(1)=f(2)=1
         </div>
       </div>
-      <div class="formula-box-dark" style="flex:1">
+      <div v-click class="formula-box-dark" style="flex:1">
         <div class="formula-label">辗转相除法 GCD</div>
         <div class="formula-main">gcd(m, n) = gcd(n, m % n)</div>
         <div class="formula-sub">
@@ -159,7 +159,7 @@ canvasWidth: 900
       </div>
     </div>
     <div class="rec-col">
-      <div class="code-box-dark" style="flex:1">
+      <div v-click class="code-box-dark" style="flex:1">
         <div class="code-box-label">fib.c — 迭代求斐波那契</div>
         <pre><span class="kw">int</span> <span class="var">a</span>=<span class="num">1</span>, <span class="var">b</span>=<span class="num">1</span>, <span class="var">c</span>;
 <span class="kw">for</span> (<span class="var">i</span>=<span class="num">3</span>; <span class="var">i</span>&lt;=<span class="num">12</span>; <span class="var">i</span>++) {
@@ -169,7 +169,7 @@ canvasWidth: 900
     <span class="var">b</span> = <span class="var">c</span>;
 }</pre>
       </div>
-      <div class="code-box-dark" style="flex:1">
+      <div v-click class="code-box-dark" style="flex:1">
         <div class="code-box-label">gcd.c — 辗转相除法</div>
         <pre><span class="kw">int</span> <span class="fn">gcd</span>(<span class="kw">int</span> <span class="var">a</span>, <span class="kw">int</span> <span class="var">b</span>) {
     <span class="kw">int</span> <span class="var">c</span> = <span class="var">a</span> <span class="op">%</span> <span class="var">b</span>;
@@ -199,14 +199,14 @@ canvasWidth: 900
     <div class="binary-col" style="left:88%">11010010110100101101001011</div>
     <div class="binary-col" style="left:95%">00101101001011010010110100</div>
   </div>
-  <div class="sec-header">
+  <div v-click class="sec-header">
     <div class="sec-num">4.2</div>
     <div class="sec-title">倒推法 — 从结果反推起始</div>
     <div class="sec-tag">Backward Iteration</div>
   </div>
   <div class="bw-grid" style="flex:1">
     <div class="bw-col">
-      <div class="bw-card bw-card-a" style="flex:0 0 auto">
+      <div v-click class="bw-card bw-card-a" style="flex:0 0 auto">
         <div class="bw-label">正推 vs 倒推</div>
         <div class="compare-row">
           <div class="compare-icon ci-green">→</div>
@@ -217,7 +217,7 @@ canvasWidth: 900
           <div class="compare-text"><strong>倒推：</strong>已知末态，反向推算起始状态</div>
         </div>
       </div>
-      <div class="bw-card bw-card-a" style="flex:1">
+      <div v-click class="bw-card bw-card-a" style="flex:1">
         <div class="bw-label">猴子吃桃问题</div>
         <div class="monkey-steps">
           <div class="monkey-step">
@@ -235,7 +235,7 @@ canvasWidth: 900
           <div class="monkey-code">day[i-1] = (day[i] + 1) * 2</div>
         </div>
       </div>
-      <div class="bw-card bw-card-c" style="flex:1">
+      <div v-click class="bw-card bw-card-c" style="flex:1">
         <div class="bw-label">穿越沙漠建油库</div>
         <div class="monkey-steps">
           <div class="monkey-step">
@@ -250,7 +250,7 @@ canvasWidth: 900
       </div>
     </div>
     <div class="bw-col">
-      <div class="bw-card bw-card-b" style="flex:0 0 auto">
+      <div v-click class="bw-card bw-card-b" style="flex:0 0 auto">
         <div class="bw-label">杨辉三角 — 为何需要倒推？</div>
         <div class="pascal-vis">
           <div class="pascal-row"><div class="pascal-cell bright">1</div></div>
@@ -261,7 +261,7 @@ canvasWidth: 900
         </div>
         <div class="pascal-formula">a[j] = a[j-1] + a[j]</div>
       </div>
-      <div class="bw-card bw-card-a" style="flex:1">
+      <div v-click class="bw-card bw-card-a" style="flex:1">
         <div class="bw-label">倒推避免数据覆盖</div>
         <div class="compare-code-grid">
           <div>
@@ -311,13 +311,13 @@ canvasWidth: 900
       </g>
     </svg>
   </div>
-  <div class="sec-header">
+  <div v-click class="sec-header">
     <div class="sec-num">4.3</div>
     <div class="sec-title">迭代法解方程 — 三种数值方法</div>
     <div class="sec-tag">Equation Solving</div>
   </div>
   <div class="eq-grid" style="flex:1">
-    <div class="eq-method">
+    <div v-click class="eq-method">
       <div class="eq-method-header h-red">
         <span style="font-size:18px">∿</span> 不动点迭代
       </div>
@@ -335,7 +335,7 @@ canvasWidth: 900
         </div>
       </div>
     </div>
-    <div class="eq-method">
+    <div v-click class="eq-method">
       <div class="eq-method-header h-blue">
         <span style="font-size:18px">∂</span> 牛顿迭代法
       </div>
@@ -353,7 +353,7 @@ canvasWidth: 900
         </div>
       </div>
     </div>
-    <div class="eq-method">
+    <div v-click class="eq-method">
       <div class="eq-method-header h-amber">
         <span style="font-size:18px">⟨⟩</span> 二分法
       </div>
@@ -372,7 +372,7 @@ canvasWidth: 900
       </div>
     </div>
   </div>
-  <div class="eq-bottom-bar">
+  <div v-click class="eq-bottom-bar">
     <div class="eq-bottom-label">示例（牛顿法）</div>
     <div class="eq-bottom-formula">x³ + 2x² + 3x + 4 = 0 &nbsp;→&nbsp; <span class="heq">f'(x) = 3x² + 4x + 3</span></div>
   </div>
@@ -387,13 +387,13 @@ canvasWidth: 900
   c=a%b; }            return b; }    else{x2=x;f2=f;} } while(fabs(f)&gt;=1e-4);
 int a=1,b=1,c;        f0=((a*x0+b)*x0+c)*x0+d;    x=(x1+x2)/2; f=F(x);
 for(i=3;i&lt;=12;i++){  f1=(3*a*x0+2*b)*x0+c;      A[1]=A[i]=1; for(j=i-1;j&gt;=2;j--)</div>
-  <div class="sec-header">
+  <div v-click class="sec-header">
     <div class="sec-num">&lt;/&gt;</div>
     <div class="sec-title">代码实现 — GCD 与牛顿迭代</div>
     <div class="sec-tag">Code · 1/2</div>
   </div>
   <div class="code-dual-grid" style="flex:1">
-    <div class="code-file">
+    <div v-click class="code-file">
       <div class="code-file-header">
         <div class="code-file-dots">
           <div class="cfd cfd-r"></div><div class="cfd cfd-y"></div><div class="cfd cfd-g"></div>
@@ -412,7 +412,7 @@ for(i=3;i&lt;=12;i++){  f1=(3*a*x0+2*b)*x0+c;      A[1]=A[i]=1; for(j=i-1;j&gt;=
 <span class="lnum">9</span>}</pre>
       </div>
     </div>
-    <div class="code-file">
+    <div v-click class="code-file">
       <div class="code-file-header">
         <div class="code-file-dots">
           <div class="cfd cfd-r"></div><div class="cfd cfd-y"></div><div class="cfd cfd-g"></div>
@@ -446,13 +446,13 @@ for(i=3;i&lt;=12;i++){  f1=(3*a*x0+2*b)*x0+c;      A[1]=A[i]=1; for(j=i-1;j&gt;=
   c=a%b; }            return b; }    else{x2=x;f2=f;} } while(fabs(f)&gt;=1e-4);
 int a=1,b=1,c;        f0=((a*x0+b)*x0+c)*x0+d;    x=(x1+x2)/2; f=F(x);
 for(i=3;i&lt;=12;i++){  f1=(3*a*x0+2*b)*x0+c;      A[1]=A[i]=1; for(j=i-1;j&gt;=2;j--)</div>
-  <div class="sec-header">
+  <div v-click class="sec-header">
     <div class="sec-num">&lt;/&gt;</div>
     <div class="sec-title">代码实现 — 二分法与杨辉三角</div>
     <div class="sec-tag">Code · 2/2</div>
   </div>
   <div class="code-dual-grid" style="flex:1">
-    <div class="code-file">
+    <div v-click class="code-file">
       <div class="code-file-header">
         <div class="code-file-dots">
           <div class="cfd cfd-r"></div><div class="cfd cfd-y"></div><div class="cfd cfd-g"></div>
@@ -474,7 +474,7 @@ for(i=3;i&lt;=12;i++){  f1=(3*a*x0+2*b)*x0+c;      A[1]=A[i]=1; for(j=i-1;j&gt;=
 <span class="lnum">12</span>} <span class="kw">while</span> (<span class="fn">fabs</span>(<span class="var">f</span>) >= <span class="num">1e-4</span>);</pre>
       </div>
     </div>
-    <div class="code-file">
+    <div v-click class="code-file">
       <div class="code-file-header">
         <div class="code-file-dots">
           <div class="cfd cfd-r"></div><div class="cfd cfd-y"></div><div class="cfd cfd-g"></div>
@@ -530,13 +530,13 @@ for(i=3;i&lt;=12;i++){  f1=(3*a*x0+2*b)*x0+c;      A[1]=A[i]=1; for(j=i-1;j&gt;=
       </g>
     </svg>
   </div>
-  <div class="sum-header">
+  <div v-click class="sum-header">
     <div class="sum-title">迭代算法 — 知识总结</div>
     <div class="sum-sub">Chapter 4.1 · Algorithm Design &amp; Analysis</div>
     <div class="sum-divider"></div>
   </div>
   <div class="sum-grid">
-    <div class="sum-card">
+    <div v-click class="sum-card">
       <div class="sum-card-top">
         <div class="sum-card-icon si-green">→</div>
         <div class="sum-card-title">递推法</div>
@@ -548,7 +548,7 @@ for(i=3;i&lt;=12;i++){  f1=(3*a*x0+2*b)*x0+c;      A[1]=A[i]=1; for(j=i-1;j&gt;=
         <div class="sum-item"><div class="sum-dot sd-g"></div><span>正向推进，初值已知</span></div>
       </div>
     </div>
-    <div class="sum-card">
+    <div v-click class="sum-card">
       <div class="sum-card-top">
         <div class="sum-card-icon si-purple">←</div>
         <div class="sum-card-title">倒推法</div>
@@ -560,7 +560,7 @@ for(i=3;i&lt;=12;i++){  f1=(3*a*x0+2*b)*x0+c;      A[1]=A[i]=1; for(j=i-1;j&gt;=
         <div class="sum-item"><div class="sum-dot sd-p"></div><span>从末态反向推导</span></div>
       </div>
     </div>
-    <div class="sum-card">
+    <div v-click class="sum-card">
       <div class="sum-card-top">
         <div class="sum-card-icon si-amber">≈</div>
         <div class="sum-card-title">解方程三法</div>

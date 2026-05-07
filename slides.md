@@ -38,6 +38,67 @@ drawings:
 
 ---
 
+<!-- TOC: 迭代策略总览 -->
+<div class="slide-toc" style="position:absolute;inset:0;transform:scale(0.92) translateY(-2%);transform-origin:center center;">
+  <div class="toc-inner">
+    <div class="toc-chapter-badge">Chapter 4.1</div>
+    <div class="toc-main-title">迭代算法</div>
+    <div class="toc-sub-title">CONTENT MAP</div>
+    <div class="toc-grid">
+      <div class="toc-card active" style="--toc-color: #10b981;">
+        <div class="toc-card-num">01</div>
+        <div class="toc-card-icon">◉</div>
+        <div>
+          <div class="toc-card-title">迭代策略总览</div>
+          <div class="toc-card-sub">Overview</div>
+        </div>
+      </div>
+      <div class="toc-card" style="--toc-color: #f59e0b;">
+        <div class="toc-card-num">02</div>
+        <div class="toc-card-icon">→</div>
+        <div>
+          <div class="toc-card-title">递推法</div>
+          <div class="toc-card-sub">Forward</div>
+        </div>
+      </div>
+      <div class="toc-card" style="--toc-color: #818cf8;">
+        <div class="toc-card-num">03</div>
+        <div class="toc-card-icon">←</div>
+        <div>
+          <div class="toc-card-title">倒推法</div>
+          <div class="toc-card-sub">Backward</div>
+        </div>
+      </div>
+      <div class="toc-card" style="--toc-color: #e11d48;">
+        <div class="toc-card-num">04</div>
+        <div class="toc-card-icon">≈</div>
+        <div>
+          <div class="toc-card-title">迭代法解方程</div>
+          <div class="toc-card-sub">Equation</div>
+        </div>
+      </div>
+      <div class="toc-card" style="--toc-color: #d97706;">
+        <div class="toc-card-num">05</div>
+        <div class="toc-card-icon">&lt;/&gt;</div>
+        <div>
+          <div class="toc-card-title">代码实现</div>
+          <div class="toc-card-sub">Code</div>
+        </div>
+      </div>
+      <div class="toc-card" style="--toc-color: #6366f1;">
+        <div class="toc-card-num">06</div>
+        <div class="toc-card-icon">◆</div>
+        <div>
+          <div class="toc-card-title">总结</div>
+          <div class="toc-card-sub">Summary</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+
 <!-- SLIDE 2: 迭代策略总览 -->
 <div class="slide-overview" style="position:absolute;inset:0;transform:scale(0.78) translateY(-8%);transform-origin:center center;">
   <div class="bg-circuit">
@@ -96,6 +157,67 @@ drawings:
         <div class="ov-card-desc">构造收敛序列，逐步逼近方程精确根。不动点、牛顿法、二分法。</div>
       </div>
       <div class="ov-card-tag">Converge</div>
+    </div>
+  </div>
+</div>
+
+---
+
+<!-- TOC: 递推法 -->
+<div class="slide-toc" style="position:absolute;inset:0;transform:scale(0.92) translateY(-2%);transform-origin:center center;">
+  <div class="toc-inner">
+    <div class="toc-chapter-badge">Chapter 4.1</div>
+    <div class="toc-main-title">迭代算法</div>
+    <div class="toc-sub-title">CONTENT MAP</div>
+    <div class="toc-grid">
+      <div class="toc-card" style="--toc-color: #10b981;">
+        <div class="toc-card-num">01</div>
+        <div class="toc-card-icon">◉</div>
+        <div>
+          <div class="toc-card-title">迭代策略总览</div>
+          <div class="toc-card-sub">Overview</div>
+        </div>
+      </div>
+      <div class="toc-card active" style="--toc-color: #f59e0b;">
+        <div class="toc-card-num">02</div>
+        <div class="toc-card-icon">→</div>
+        <div>
+          <div class="toc-card-title">递推法</div>
+          <div class="toc-card-sub">Forward</div>
+        </div>
+      </div>
+      <div class="toc-card" style="--toc-color: #818cf8;">
+        <div class="toc-card-num">03</div>
+        <div class="toc-card-icon">←</div>
+        <div>
+          <div class="toc-card-title">倒推法</div>
+          <div class="toc-card-sub">Backward</div>
+        </div>
+      </div>
+      <div class="toc-card" style="--toc-color: #e11d48;">
+        <div class="toc-card-num">04</div>
+        <div class="toc-card-icon">≈</div>
+        <div>
+          <div class="toc-card-title">迭代法解方程</div>
+          <div class="toc-card-sub">Equation</div>
+        </div>
+      </div>
+      <div class="toc-card" style="--toc-color: #d97706;">
+        <div class="toc-card-num">05</div>
+        <div class="toc-card-icon">&lt;/&gt;</div>
+        <div>
+          <div class="toc-card-title">代码实现</div>
+          <div class="toc-card-sub">Code</div>
+        </div>
+      </div>
+      <div class="toc-card" style="--toc-color: #6366f1;">
+        <div class="toc-card-num">06</div>
+        <div class="toc-card-icon">◆</div>
+        <div>
+          <div class="toc-card-title">总结</div>
+          <div class="toc-card-sub">Summary</div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -189,6 +311,67 @@ drawings:
 </div>
 </div>
 
+
+---
+
+<!-- TOC: 倒推法 -->
+<div class="slide-toc" style="position:absolute;inset:0;transform:scale(0.92) translateY(-2%);transform-origin:center center;">
+  <div class="toc-inner">
+    <div class="toc-chapter-badge">Chapter 4.1</div>
+    <div class="toc-main-title">迭代算法</div>
+    <div class="toc-sub-title">CONTENT MAP</div>
+    <div class="toc-grid">
+      <div class="toc-card" style="--toc-color: #10b981;">
+        <div class="toc-card-num">01</div>
+        <div class="toc-card-icon">◉</div>
+        <div>
+          <div class="toc-card-title">迭代策略总览</div>
+          <div class="toc-card-sub">Overview</div>
+        </div>
+      </div>
+      <div class="toc-card" style="--toc-color: #f59e0b;">
+        <div class="toc-card-num">02</div>
+        <div class="toc-card-icon">→</div>
+        <div>
+          <div class="toc-card-title">递推法</div>
+          <div class="toc-card-sub">Forward</div>
+        </div>
+      </div>
+      <div class="toc-card active" style="--toc-color: #818cf8;">
+        <div class="toc-card-num">03</div>
+        <div class="toc-card-icon">←</div>
+        <div>
+          <div class="toc-card-title">倒推法</div>
+          <div class="toc-card-sub">Backward</div>
+        </div>
+      </div>
+      <div class="toc-card" style="--toc-color: #e11d48;">
+        <div class="toc-card-num">04</div>
+        <div class="toc-card-icon">≈</div>
+        <div>
+          <div class="toc-card-title">迭代法解方程</div>
+          <div class="toc-card-sub">Equation</div>
+        </div>
+      </div>
+      <div class="toc-card" style="--toc-color: #d97706;">
+        <div class="toc-card-num">05</div>
+        <div class="toc-card-icon">&lt;/&gt;</div>
+        <div>
+          <div class="toc-card-title">代码实现</div>
+          <div class="toc-card-sub">Code</div>
+        </div>
+      </div>
+      <div class="toc-card" style="--toc-color: #6366f1;">
+        <div class="toc-card-num">06</div>
+        <div class="toc-card-icon">◆</div>
+        <div>
+          <div class="toc-card-title">总结</div>
+          <div class="toc-card-sub">Summary</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -296,6 +479,67 @@ drawings:
 
 ---
 
+<!-- TOC: 迭代法解方程 -->
+<div class="slide-toc" style="position:absolute;inset:0;transform:scale(0.92) translateY(-2%);transform-origin:center center;">
+  <div class="toc-inner">
+    <div class="toc-chapter-badge">Chapter 4.1</div>
+    <div class="toc-main-title">迭代算法</div>
+    <div class="toc-sub-title">CONTENT MAP</div>
+    <div class="toc-grid">
+      <div class="toc-card" style="--toc-color: #10b981;">
+        <div class="toc-card-num">01</div>
+        <div class="toc-card-icon">◉</div>
+        <div>
+          <div class="toc-card-title">迭代策略总览</div>
+          <div class="toc-card-sub">Overview</div>
+        </div>
+      </div>
+      <div class="toc-card" style="--toc-color: #f59e0b;">
+        <div class="toc-card-num">02</div>
+        <div class="toc-card-icon">→</div>
+        <div>
+          <div class="toc-card-title">递推法</div>
+          <div class="toc-card-sub">Forward</div>
+        </div>
+      </div>
+      <div class="toc-card" style="--toc-color: #818cf8;">
+        <div class="toc-card-num">03</div>
+        <div class="toc-card-icon">←</div>
+        <div>
+          <div class="toc-card-title">倒推法</div>
+          <div class="toc-card-sub">Backward</div>
+        </div>
+      </div>
+      <div class="toc-card active" style="--toc-color: #e11d48;">
+        <div class="toc-card-num">04</div>
+        <div class="toc-card-icon">≈</div>
+        <div>
+          <div class="toc-card-title">迭代法解方程</div>
+          <div class="toc-card-sub">Equation</div>
+        </div>
+      </div>
+      <div class="toc-card" style="--toc-color: #d97706;">
+        <div class="toc-card-num">05</div>
+        <div class="toc-card-icon">&lt;/&gt;</div>
+        <div>
+          <div class="toc-card-title">代码实现</div>
+          <div class="toc-card-sub">Code</div>
+        </div>
+      </div>
+      <div class="toc-card" style="--toc-color: #6366f1;">
+        <div class="toc-card-num">06</div>
+        <div class="toc-card-icon">◆</div>
+        <div>
+          <div class="toc-card-title">总结</div>
+          <div class="toc-card-sub">Summary</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+
 <!-- SLIDE 5: 迭代法解方程 -->
 <div class="slide-equation" style="position:absolute;inset:0;transform:scale(0.95) translateY(4%);transform-origin:center center;">
   <div class="bg-converge">
@@ -383,6 +627,67 @@ drawings:
   <div class="eq-bottom-bar" v-click="5">
     <div class="eq-bottom-label">示例（牛顿法）</div>
     <div class="eq-bottom-formula">x³ + 2x² + 3x + 4 = 0 &nbsp;→&nbsp; <span class="heq">f'(x) = 3x² + 4x + 3</span></div>
+  </div>
+</div>
+
+---
+
+<!-- TOC: 代码实现 -->
+<div class="slide-toc" style="position:absolute;inset:0;transform:scale(0.92) translateY(-2%);transform-origin:center center;">
+  <div class="toc-inner">
+    <div class="toc-chapter-badge">Chapter 4.1</div>
+    <div class="toc-main-title">迭代算法</div>
+    <div class="toc-sub-title">CONTENT MAP</div>
+    <div class="toc-grid">
+      <div class="toc-card" style="--toc-color: #10b981;">
+        <div class="toc-card-num">01</div>
+        <div class="toc-card-icon">◉</div>
+        <div>
+          <div class="toc-card-title">迭代策略总览</div>
+          <div class="toc-card-sub">Overview</div>
+        </div>
+      </div>
+      <div class="toc-card" style="--toc-color: #f59e0b;">
+        <div class="toc-card-num">02</div>
+        <div class="toc-card-icon">→</div>
+        <div>
+          <div class="toc-card-title">递推法</div>
+          <div class="toc-card-sub">Forward</div>
+        </div>
+      </div>
+      <div class="toc-card" style="--toc-color: #818cf8;">
+        <div class="toc-card-num">03</div>
+        <div class="toc-card-icon">←</div>
+        <div>
+          <div class="toc-card-title">倒推法</div>
+          <div class="toc-card-sub">Backward</div>
+        </div>
+      </div>
+      <div class="toc-card" style="--toc-color: #e11d48;">
+        <div class="toc-card-num">04</div>
+        <div class="toc-card-icon">≈</div>
+        <div>
+          <div class="toc-card-title">迭代法解方程</div>
+          <div class="toc-card-sub">Equation</div>
+        </div>
+      </div>
+      <div class="toc-card active" style="--toc-color: #d97706;">
+        <div class="toc-card-num">05</div>
+        <div class="toc-card-icon">&lt;/&gt;</div>
+        <div>
+          <div class="toc-card-title">代码实现</div>
+          <div class="toc-card-sub">Code</div>
+        </div>
+      </div>
+      <div class="toc-card" style="--toc-color: #6366f1;">
+        <div class="toc-card-num">06</div>
+        <div class="toc-card-icon">◆</div>
+        <div>
+          <div class="toc-card-title">总结</div>
+          <div class="toc-card-sub">Summary</div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -501,6 +806,67 @@ for(i=3;i&lt;=12;i++){  f1=(3*a*x0+2*b)*x0+c;      A[1]=A[i]=1; for(j=i-1;j&gt;=
 <span class="lnum"> 9</span>        <span class="fn">printf</span>(<span class="str">"%4d"</span>, <span class="var">A</span>[<span class="var">j</span>]);
 <span class="lnum">10</span>    <span class="fn">printf</span>(<span class="str">"\n"</span>);
 <span class="lnum">11</span>}</pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+
+<!-- TOC: 总结 -->
+<div class="slide-toc" style="position:absolute;inset:0;transform:scale(0.92) translateY(-2%);transform-origin:center center;">
+  <div class="toc-inner">
+    <div class="toc-chapter-badge">Chapter 4.1</div>
+    <div class="toc-main-title">迭代算法</div>
+    <div class="toc-sub-title">CONTENT MAP</div>
+    <div class="toc-grid">
+      <div class="toc-card" style="--toc-color: #10b981;">
+        <div class="toc-card-num">01</div>
+        <div class="toc-card-icon">◉</div>
+        <div>
+          <div class="toc-card-title">迭代策略总览</div>
+          <div class="toc-card-sub">Overview</div>
+        </div>
+      </div>
+      <div class="toc-card" style="--toc-color: #f59e0b;">
+        <div class="toc-card-num">02</div>
+        <div class="toc-card-icon">→</div>
+        <div>
+          <div class="toc-card-title">递推法</div>
+          <div class="toc-card-sub">Forward</div>
+        </div>
+      </div>
+      <div class="toc-card" style="--toc-color: #818cf8;">
+        <div class="toc-card-num">03</div>
+        <div class="toc-card-icon">←</div>
+        <div>
+          <div class="toc-card-title">倒推法</div>
+          <div class="toc-card-sub">Backward</div>
+        </div>
+      </div>
+      <div class="toc-card" style="--toc-color: #e11d48;">
+        <div class="toc-card-num">04</div>
+        <div class="toc-card-icon">≈</div>
+        <div>
+          <div class="toc-card-title">迭代法解方程</div>
+          <div class="toc-card-sub">Equation</div>
+        </div>
+      </div>
+      <div class="toc-card" style="--toc-color: #d97706;">
+        <div class="toc-card-num">05</div>
+        <div class="toc-card-icon">&lt;/&gt;</div>
+        <div>
+          <div class="toc-card-title">代码实现</div>
+          <div class="toc-card-sub">Code</div>
+        </div>
+      </div>
+      <div class="toc-card active" style="--toc-color: #6366f1;">
+        <div class="toc-card-num">06</div>
+        <div class="toc-card-icon">◆</div>
+        <div>
+          <div class="toc-card-title">总结</div>
+          <div class="toc-card-sub">Summary</div>
+        </div>
       </div>
     </div>
   </div>
